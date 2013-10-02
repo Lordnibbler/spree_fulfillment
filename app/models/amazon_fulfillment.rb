@@ -95,7 +95,7 @@ class AmazonFulfillment
   end
 
   def address
-    addr = @shipment.address
+    addr = @shipment.order.ship_address
     {
       :name     => "#{addr.firstname} #{addr.lastname}",
       :address1 => addr.address1,
