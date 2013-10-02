@@ -18,7 +18,7 @@ module Spree
     end
 
     def self.log(msg)
-      Rails.logger.info "**** spree_fulfillment: #{msg}"
+      p "**** spree_fulfillment: #{msg}"
     end
 
     # Passes any shipments that are ready to the fulfillment service
